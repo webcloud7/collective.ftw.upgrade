@@ -131,7 +131,7 @@ class ConsoleScriptLayer(Layer):
         dependencies = self.resolve_dependency_versions(self.package_name,
                                                         extras=self.extras)
 
-        assert 'zc.recipe.egg' in dependencies, \
+        assert 'zc-recipe-egg' in dependencies, \
             'For using the ConsoleScriptLayer you need to put "zc.recipe.egg" in' + \
             ' the test dependencies of your package.'
 
@@ -151,7 +151,9 @@ class ConsoleScriptLayer(Layer):
         result[pkgname] = dist.version
         for pkg in dist.requires or []:
             requirement = Requirement(pkg)
-            self.resolve_dependency_versions(requirement.name, result)
+            for extra in extras:
+                if f"extra == '{extra}'" in pkg:
+                    self.resolve_dependency_versions(requirement.name, result)
 
         return result
 
