@@ -11,7 +11,6 @@ from collective.ftw.upgrade.command.formatter import FlexiFormatter
 from collective.ftw.upgrade.command.terminal import TERMINAL
 from collective.ftw.upgrade.command.utils import capture
 
-
 import argcomplete
 import argparse
 import importlib

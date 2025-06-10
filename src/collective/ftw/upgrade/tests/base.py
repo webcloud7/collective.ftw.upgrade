@@ -14,6 +14,7 @@ from contextlib import contextmanager
 from DateTime import DateTime
 from ftw.builder import Builder
 from ftw.builder import create
+from io import StringIO
 from operator import itemgetter
 from path import Path
 from plone.app.testing import login
@@ -24,7 +25,6 @@ from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_PASSWORD
 from plone.restapi.testing import RelativeSession
 from Products.CMFCore.utils import getToolByName
-from io import StringIO
 from unittest import TestCase
 from zope.component import getMultiAdapter
 from zope.component import queryAdapter

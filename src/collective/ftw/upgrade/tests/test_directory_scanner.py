@@ -1,10 +1,10 @@
+from collective.ftw.upgrade.directory.scanner import Scanner
+from collective.ftw.upgrade.exceptions import UpgradeStepDefinitionError
+from collective.ftw.upgrade.tests.base import UpgradeTestCase
 from contextlib import contextmanager
 from datetime import datetime
 from ftw.builder import Builder
 from ftw.builder import create
-from collective.ftw.upgrade.directory.scanner import Scanner
-from collective.ftw.upgrade.exceptions import UpgradeStepDefinitionError
-from collective.ftw.upgrade.tests.base import UpgradeTestCase
 
 import six
 import unittest

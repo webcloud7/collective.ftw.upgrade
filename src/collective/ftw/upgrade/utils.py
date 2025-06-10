@@ -1,13 +1,14 @@
 from AccessControl.SecurityInfo import ClassSecurityInformation
 from App.config import getConfiguration
 from collections import defaultdict
+from collective.ftw.upgrade.exceptions import CyclicDependencies
 from contextlib import contextmanager
 from copy import deepcopy
-from collective.ftw.upgrade.exceptions import CyclicDependencies
 from path import Path
 from zExceptions import NotFound
 from zope.component.hooks import getSite
 from zope.component.hooks import setSite
+
 import gc
 import logging
 import math

@@ -1,7 +1,7 @@
-from ftw.builder import builder_registry
-from ftw.builder.utils import serialize_callable
 from collective.ftw.upgrade import UpgradeStep
 from collective.ftw.upgrade.directory import scaffold
+from ftw.builder import builder_registry
+from ftw.builder.utils import serialize_callable
 from path import Path
 
 import inflection

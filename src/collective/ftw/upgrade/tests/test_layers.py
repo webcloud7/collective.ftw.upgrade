@@ -1,6 +1,6 @@
 from collective.ftw.upgrade.tests.layers import COMPONENT_REGISTRY_ISOLATION
-from collective.ftw.upgrade.tests.layers import TEMP_DIRECTORY
 from collective.ftw.upgrade.tests.layers import ConsoleScriptLayer
+from collective.ftw.upgrade.tests.layers import TEMP_DIRECTORY
 from plone.app.testing import IntegrationTesting
 from Products.CMFCore.utils import getToolByName
 from unittest import TestCase

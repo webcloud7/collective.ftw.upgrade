@@ -1,7 +1,7 @@
-from datetime import datetime
-from ftw.builder import Builder
 from collective.ftw.upgrade.command import jsonapi
 from collective.ftw.upgrade.tests.base import CommandAndInstanceTestCase
+from datetime import datetime
+from ftw.builder import Builder
 
 import json
 import re

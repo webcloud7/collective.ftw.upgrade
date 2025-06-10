@@ -5,12 +5,11 @@ from functools import reduce
 from glob import glob
 from Products.GenericSetup.upgrade import normalize_version
 
+import importlib
 import inspect
 import os.path
 import re
 import six
-
-import importlib
 
 
 UPGRADESTEP_DATETIME_REGEX = re.compile(r'^.*/?(\d{14})[^/]*/upgrade.py$')

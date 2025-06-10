@@ -1,9 +1,9 @@
-from DateTime import DateTime
 from collective.ftw.upgrade import ProgressLogger
 from collective.ftw.upgrade.helpers import update_security_for
 from collective.ftw.upgrade.utils import SafeObjectGetter
 from collective.ftw.upgrade.utils import SavepointIterator
 from collective.ftw.upgrade.utils import SizedGenerator
+from DateTime import DateTime
 from Products.CMFCore.utils import getToolByName
 from zope.component.hooks import getSite
 

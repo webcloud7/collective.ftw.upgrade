@@ -1,9 +1,9 @@
-from datetime import datetime
-from ftw.builder import Builder
 from collective.ftw.upgrade.browser.manage import ResponseLogger
 from collective.ftw.upgrade.tests.base import JsonApiTestCase
-from Products.CMFCore.utils import getToolByName
+from datetime import datetime
+from ftw.builder import Builder
 from io import BytesIO
+from Products.CMFCore.utils import getToolByName
 from unittest import TestCase
 
 import logging

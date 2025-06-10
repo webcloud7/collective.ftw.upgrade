@@ -1,6 +1,6 @@
+from collective.ftw.upgrade.tests.base import CommandTestCase
 from ftw.builder import Builder
 from ftw.builder import create
-from collective.ftw.upgrade.tests.base import CommandTestCase
 
 import six
 

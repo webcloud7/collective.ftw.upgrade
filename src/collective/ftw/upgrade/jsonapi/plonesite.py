@@ -2,7 +2,9 @@ from collective.ftw.upgrade.browser.manage import ResponseLogger
 from collective.ftw.upgrade.interfaces import IExecutioner
 from collective.ftw.upgrade.interfaces import IUpgradeInformationGatherer
 from collective.ftw.upgrade.jsonapi.base import APIView
-from collective.ftw.upgrade.jsonapi.exceptions import AbortTransactionWithStreamedResponse
+from collective.ftw.upgrade.jsonapi.exceptions import (
+    AbortTransactionWithStreamedResponse,
+)
 from collective.ftw.upgrade.jsonapi.exceptions import PloneSiteOutdated
 from collective.ftw.upgrade.jsonapi.exceptions import ProfileNotAvailable
 from collective.ftw.upgrade.jsonapi.exceptions import ProfileNotFound

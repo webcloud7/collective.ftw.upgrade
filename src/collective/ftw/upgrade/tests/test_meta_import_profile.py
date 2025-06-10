@@ -1,7 +1,7 @@
-from ftw.builder import Builder
-from ftw.builder.utils import serialize_callable
 from collective.ftw.upgrade import UpgradeStep
 from collective.ftw.upgrade.tests.base import UpgradeTestCase
+from ftw.builder import Builder
+from ftw.builder.utils import serialize_callable
 from Products.CMFCore.utils import getToolByName
 
 

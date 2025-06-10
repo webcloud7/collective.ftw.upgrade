@@ -1,8 +1,8 @@
-from datetime import datetime
-from datetime import timedelta
 from collective.ftw.upgrade.command.terminal import TERMINAL
 from collective.ftw.upgrade.directory.scaffold import DATETIME_FORMAT
 from collective.ftw.upgrade.directory.scanner import UPGRADESTEP_DATETIME_REGEX
+from datetime import datetime
+from datetime import timedelta
 from path import Path
 
 import argparse

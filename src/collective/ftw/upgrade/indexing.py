@@ -5,8 +5,8 @@ HAS_INDEXING = False
 
 try:
     # Plone 5
-    from Products.CMFCore.indexing import processQueue
     from Products.CMFCore.indexing import getQueue
+    from Products.CMFCore.indexing import processQueue
 except ImportError:
     try:
         # Plone 4 with collective.indexing

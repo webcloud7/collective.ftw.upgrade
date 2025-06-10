@@ -6,8 +6,8 @@ from collective.ftw.upgrade.tests.layers import TempDirectoryLayer
 from ftw.builder import Builder
 from ftw.builder import create
 from ftw.builder.testing import BUILDER_LAYER
-from path import Path
 from io import StringIO
+from path import Path
 from unittest import TestCase
 
 

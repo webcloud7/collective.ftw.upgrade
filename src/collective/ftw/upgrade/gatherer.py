@@ -1,10 +1,10 @@
 from AccessControl.SecurityInfo import ClassSecurityInformation
-from datetime import datetime
 from collective.ftw.upgrade.exceptions import UpgradeNotFound
 from collective.ftw.upgrade.interfaces import IRecordableHandler
 from collective.ftw.upgrade.interfaces import IUpgradeInformationGatherer
 from collective.ftw.upgrade.interfaces import IUpgradeStepRecorder
 from collective.ftw.upgrade.utils import get_sorted_profile_ids
+from datetime import datetime
 from functools import reduce
 from operator import itemgetter
 from Products.CMFCore.utils import getToolByName
@@ -15,6 +15,7 @@ from zope.component import adapts
 from zope.component import getMultiAdapter
 from zope.deprecation import deprecated
 from zope.interface import implementer
+
 
 try:
     from Products.CMFPlone.utils import get_installer

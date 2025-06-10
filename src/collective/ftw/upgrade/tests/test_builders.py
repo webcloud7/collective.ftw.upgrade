@@ -1,7 +1,7 @@
-from datetime import datetime
-from ftw.builder import Builder
 from collective.ftw.upgrade import UpgradeStep
 from collective.ftw.upgrade.tests.base import UpgradeTestCase
+from datetime import datetime
+from ftw.builder import Builder
 from Products.CMFCore.utils import getToolByName
 
 

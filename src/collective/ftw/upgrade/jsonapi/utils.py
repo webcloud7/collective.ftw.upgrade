@@ -6,7 +6,9 @@ from Acquisition import aq_parent
 from binascii import hexlify
 from collective.ftw.upgrade.exceptions import CyclicDependencies
 from collective.ftw.upgrade.exceptions import UpgradeNotFound
-from collective.ftw.upgrade.jsonapi.exceptions import AbortTransactionWithStreamedResponse
+from collective.ftw.upgrade.jsonapi.exceptions import (
+    AbortTransactionWithStreamedResponse,
+)
 from collective.ftw.upgrade.jsonapi.exceptions import APIError
 from collective.ftw.upgrade.jsonapi.exceptions import CyclicDependenciesWrapper
 from collective.ftw.upgrade.jsonapi.exceptions import MethodNotAllowed

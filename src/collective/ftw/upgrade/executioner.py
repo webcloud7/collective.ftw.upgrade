@@ -1,5 +1,4 @@
 from AccessControl.SecurityInfo import ClassSecurityInformation
-from distutils.version import LooseVersion
 from collective.ftw.upgrade.indexing import processQueue
 from collective.ftw.upgrade.interfaces import IDuringUpgrade
 from collective.ftw.upgrade.interfaces import IExecutioner
@@ -11,6 +10,7 @@ from collective.ftw.upgrade.utils import get_logdir
 from collective.ftw.upgrade.utils import get_sorted_profile_ids
 from collective.ftw.upgrade.utils import log_memory_usage
 from collective.ftw.upgrade.utils import optimize_memory_usage
+from distutils.version import LooseVersion
 from Products.CMFCore.utils import getToolByName
 from Products.GenericSetup.interfaces import ISetupTool
 from Products.GenericSetup.upgrade import _upgrade_registry
@@ -23,6 +23,7 @@ import logging
 import os
 import time
 import transaction
+
 
 try:
     from Products.CMFPlone.utils import get_installer

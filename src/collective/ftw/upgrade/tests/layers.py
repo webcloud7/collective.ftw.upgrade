@@ -4,6 +4,7 @@ from plone.app.testing import PLONE_FIXTURE
 from plone.testing import Layer
 from plone.testing import zca
 from zope.configuration import xmlconfig
+
 import importlib
 import logging
 import os

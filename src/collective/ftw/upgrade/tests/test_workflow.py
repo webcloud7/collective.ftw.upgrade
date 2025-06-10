@@ -1,14 +1,15 @@
 from Acquisition import aq_inner
 from Acquisition import aq_parent
-from ftw.builder import Builder
-from ftw.builder import create
 from collective.ftw.upgrade.placefulworkflow import PlacefulWorkflowPolicyActivator
 from collective.ftw.upgrade.tests.base import WorkflowTestCase
 from collective.ftw.upgrade.workflow import WorkflowChainUpdater
 from collective.ftw.upgrade.workflow import WorkflowSecurityUpdater
+from ftw.builder import Builder
+from ftw.builder import create
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import getFSVersionTuple
 from zope.component.hooks import getSite
+
 
 ALLOWED_ROLES_AND_USERS_PERMISSION = 'View'
 if getFSVersionTuple() > (5, 2):

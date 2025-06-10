@@ -1,6 +1,6 @@
-from contextlib import contextmanager
 from collective.ftw.upgrade.gatherer import flatten_upgrades
 from collective.ftw.upgrade.interfaces import IUpgradeStepRecorder
+from contextlib import contextmanager
 from functools import partial
 from operator import itemgetter
 from Products.CMFCore.utils import getToolByName
